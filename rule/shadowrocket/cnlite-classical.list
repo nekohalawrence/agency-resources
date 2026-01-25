@@ -1,0 +1,16 @@
+# name: cnlite-classical
+# content: 
+# update_date: 20250422
+# update_url: https://raw.githubusercontent.com/nekohalawrence/PCR/main/rule/Shadowrocket/cnlite-classical.list
+# repo: https://github.com/nekohalawrence/PCR/tree/main/rule/shadowrocket
+
+# content: 
+# DOMAIN
+# DOMAIN-SUFFIX
+# DOMAIN-KEYWORD
+# IP-CIDR
+
+# DOMAIN-SUFFIX,xiaoe520.dpdns.org
+# DOMAIN-SUFFIX,nekoha520.dpdns.org
+# DOMAIN-SUFFIX,nekoha.dpdns.org
+# DOMAIN-SUFFIX,xiaoelaolunsi.dpdns.org

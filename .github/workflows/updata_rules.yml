@@ -1,0 +1,35 @@
+name: Update YAML from LIST for multiple files
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Rules/Clash.Meta/**'
+
+jobs:
+  rule_sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run synchronization script
+        run: |
+          python rule_sync.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "Sync modified files from clash.meta to Rules/Shadowrocket"
+            git push
+          else
+            echo "No changes to commit."
+          fi

@@ -1,0 +1,17 @@
+# name: gfwlite-classical
+# content: 
+# updata: 20250422
+# updata_url: https://raw.githubusercontent.com/nekohalawrence/PCR/main/rule/Shadowrocket/gfwlite-classical.list
+# repo: https://github.com/nekohalawrence/PCR/tree/main/rule/shadowrocket
+
+# DOMAIN: 1
+
+# gamebanana
+DOMAIN,gamebanana.com
+DOMAIN-SUFFIX,gamebanana.com
+# x10hosting.com
+DOMAIN,x10hosting.com
+# 域名服务
+DOMAIN,freedomain.one
+DOMAIN,www.site.ac
+DOMAIN-SUFFIX,ticktick.com
