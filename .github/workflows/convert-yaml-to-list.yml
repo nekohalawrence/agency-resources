@@ -5,8 +5,8 @@ on:
   push:
     paths:
       # 监控规则源文件的变化
-      - 'agency-resource/rule/yaml/**.yaml'
-      - 'agency-resource/rule/yaml/**.yml'
+      - 'rule/yaml/**.yaml'
+      - 'rule/yaml/**.yml'
       # 监控转换脚本的变化
       - '.github/scripts/convert_rules.py'
 
@@ -55,7 +55,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           
           # 添加生成的 list 目录
-          git add agency-resource/rule/list/
+          git add rule/list/
           
           # 检查是否有实际变更
           if git diff --staged --quiet; then
