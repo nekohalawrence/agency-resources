@@ -1,0 +1,41 @@
+def count_rule_types(payload_lines):
+    counters = {}
+    rule_pattern = re.compile(r'^\s*-?\s*(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-ASN|PROCESS-NAME|SRC-IP-CIDR|DST-PORT|GEOIP|MATCH|FINAL|REJECT|DIRECT|PROXY)[,\s].*$', re.IGNORECASE)
+    
+    for line in payload_lines:
+        line = line.strip()
+        if not line or line.startswith('#'):
+            continue
+        m = rule_pattern.match(line)
+        if m:
+            rule_type = m.group(1).upper()
+            counters[rule_type] = counters.get(rule_type, 0) + 1
+    
+    return counters
+
+# ... (其他函数不变)
+
+# 在生成新头部时动态添加规则计数
+rule_count_lines = []
+if counters:
+    rule_count_lines.extend([
+        "#",
+        "# 规则计数",
+    ])
+    for rtype, count in sorted(counters.items()):
+        # 统一对齐格式（最长类型名约 15 字符）
+        rule_count_lines.append(f"# {rtype:<15} {count:>3}")
+
+# 然后在 new_header 中加入
+new_header = [
+    f"# name: {header.get('name', src_path.stem)}",
+    f"# content: {header.get('content', '').strip()}",
+    f"# update_date: {today}",
+    f"# update_url: https://raw.githubusercontent.com/${{ github.repository }}/main/{DST_DIR}/{src_path.stem}.list",
+    f"# repo: https://github.com/${{ github.repository }}/tree/main/{DST_DIR}",
+    "#",
+    "# 包含的规则",
+    *(f"# {l.strip()}" for l in header.get('包含的规则', '').splitlines() if l.strip()),
+] + rule_count_lines + [""]
+
+# 其余逻辑不变
