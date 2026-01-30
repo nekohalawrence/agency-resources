@@ -2,13 +2,14 @@
 # content: 这个规则用于收集一些Windows平台下常见的应用程序域名，方便用户根据需要进行分流设置。
 # update_date: 20260130
 # update_url: https://raw.githubusercontent.com/nekohalawrence/proxy-resource/main/rule/list/applications-windows-classical.list
-# repo: https://github.com/nekohalawrence/PCR/tree/main/rule/mihomo
+# repo: https://github.com/nekohalawrence/proxy-resource/tree/main/rule/list
+
 # DOMAIN
 # DOMAIN-SUFFIX
 # DOMAIN-KEYWORD
 # IP-CIDR
 
+
 # 规则计数
 # PROCESS-NAME: 1
-
 PROCESS-NAME,DingTalk.exe

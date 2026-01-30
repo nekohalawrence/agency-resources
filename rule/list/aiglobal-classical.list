@@ -2,12 +2,12 @@
 # content: 这个规则用于收集AI相关的域名和IP地址，涵盖了OpenAI、BardAI和Copilot等主要AI服务提供商的相关资源。通过使用此规则，可以确保访问这些AI服务时的网络连接顺畅，避免因网络限制而影响使用体验。
 # update_date: 20260130
 # update_url: https://raw.githubusercontent.com/nekohalawrence/proxy-resource/main/rule/list/aiglobal-classical.list
-# repo: https://github.com/nekohalawrence/PCR/tree/main/rule/yaml
+# repo: https://github.com/nekohalawrence/proxy-resource/tree/main/rule/list
+
+
 # 包含的规则
 # OpenAI
-# Copilot
-# DOMAIN-KEYWORD
-# IP-CIDR
+# BardAI
 
 # 规则计数
 # DOMAIN: 12
@@ -15,7 +15,7 @@
 # DOMAIN-SUFFIX: 30
 # IP-ASN: 1
 # IP-CIDR: 2
-
+# OpenAI
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,gemini.google.com
@@ -52,6 +52,7 @@ DOMAIN-KEYWORD,openai
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-ASN,20473,no-resolve
+# BardAI
 DOMAIN,ai.google.dev
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,generativelanguage.googleapis.com

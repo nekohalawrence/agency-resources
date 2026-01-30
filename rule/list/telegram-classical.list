@@ -1,13 +1,15 @@
 # name: telegram
 # update_date: 20260130
 # update_url: https://raw.githubusercontent.com/nekohalawrence/proxy-resource/main/rule/list/telegram-classical.list
-# repo: https://github.com/nekohalawrence/PCR/tree/main/rule/mihomo
+# repo: https://github.com/nekohalawrence/proxy-resource/tree/main/rule/list
+
 # 参考规则
 # https://raw.githubusercontent.com/yuumimi/rules/release/clash/telegram.txt
 # https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Telegram
 # https://github.com/MetaCubeX/meta-rules-dat/blob/meta/geo-lite/geosite/telegram.yaml
 # https://github.com/MetaCubeX/meta-rules-dat/blob/meta/geo-lite/geoip/telegram.yaml
 # https://github.com/xixu-me/RFM/blob/basic/yaml/telegramcidr.yaml
+
 # DOMAIN: 2
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 22
@@ -16,6 +18,7 @@
 # PROCESS-NAME: 5
 # TOTAL: 43
 
+
 # 规则计数
 # DOMAIN: 2
 # DOMAIN-KEYWORD: 1
@@ -23,7 +26,6 @@
 # IP-CIDR: 4
 # IP-CIDR6: 4
 # PROCESS-NAME: 5
-
 DOMAIN,api.imem.app
 DOMAIN,api.swiftgram.app
 DOMAIN-SUFFIX,cdn-telegram.org

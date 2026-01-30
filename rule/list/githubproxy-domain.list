@@ -2,34 +2,20 @@
 # content: 
 # update_date: 20260130
 # update_url: https://raw.githubusercontent.com/nekohalawrence/proxy-resource/main/rule/list/githubproxy-domain.list
-# repo: https://github.com/nekohalawrence/PCR/tree/main/rule/mihomo
+# repo: https://github.com/nekohalawrence/proxy-resource/tree/main/rule/list
+
 # DOMAIN: 3
 
-# 规则计数
-# 521github.com: 1
-# cf.ghproxy.cc: 1
-# gh-proxy.com: 1
-# gh.api.99988866.xyz: 1
-# gh.ddlc.top: 1
-# ghfast.top: 1
-# ghgo.xyz: 1
-# ghproxy.link: 1
-# gitclone.com: 1
-# github.hscsec.cn: 1
-# githubfast.com: 1
-# kkgithub.com: 1
-# mirror.ghproxy.com: 1
-
-mirror.ghproxy.com
-cf.ghproxy.cc
-gh-proxy.com
-gh.ddlc.top
-gh.api.99988866.xyz
-kkgithub.com
-githubfast.com
-github.hscsec.cn
-521github.com
-gitclone.com
-ghfast.top
-ghgo.xyz
-ghproxy.link
+"mirror.ghproxy.com"
+"cf.ghproxy.cc"
+"gh-proxy.com"
+"gh.ddlc.top"
+"gh.api.99988866.xyz"
+"kkgithub.com"
+"githubfast.com"
+"github.hscsec.cn"
+"521github.com"
+"gitclone.com"
+"ghfast.top"
+"ghgo.xyz"
+"ghproxy.link"
