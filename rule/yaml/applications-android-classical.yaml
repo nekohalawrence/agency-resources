@@ -9,10 +9,9 @@
 # DOMAIN-KEYWORD
 # IP-CIDR
 
-
-
 # 规则计数
 # PROCESS-NAME: 3
+
 payload:
   - PROCESS-NAME,com.eg.android.AlipayGphone
   - PROCESS-NAME,com.ss.android.ugc.aweme

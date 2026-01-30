@@ -9,9 +9,8 @@
 # DOMAIN-KEYWORD
 # IP-CIDR
 
-
-
 # 规则计数
 # PROCESS-NAME: 1
+
 payload:
   - PROCESS-NAME,DingTalk.exe

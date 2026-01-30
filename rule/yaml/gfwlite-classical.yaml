@@ -9,8 +9,6 @@
 # DOMAIN-SUFFIX: 
 # IP-CIDR: 
 
-
-
 # 包含的规则
 # 工具
 # 游戏资源
@@ -23,6 +21,7 @@
 # 规则计数
 # DOMAIN: 7
 # DOMAIN-SUFFIX: 5
+
 payload:
   # 工具
   - DOMAIN-SUFFIX,ticktick.com
