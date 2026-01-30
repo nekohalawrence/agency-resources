@@ -4,9 +4,9 @@ import datetime
 
 # --- 配置区域 ---
 # 输入目录 (YAML文件所在)
-SOURCE_DIR = 'agency-resource/rule/yaml'
+SOURCE_DIR = 'rule/yaml'
 # 输出目录 (LIST文件生成位置)
-TARGET_DIR = 'agency-resource/rule/list'
+TARGET_DIR = 'rule/list'
 
 # 动态获取仓库信息 (格式: 用户名/仓库名, 例如 User/proxy-resource)
 # 如果在本地测试，回退到默认值
